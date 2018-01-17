@@ -1,6 +1,9 @@
 package com.example.blog.webhook;
 
+import java.nio.file.Paths;
+
 import am.ik.blog.entry.Entry;
+import am.ik.blog.entry.EntryId;
 import am.ik.github.GitHubClient;
 import reactor.core.publisher.Mono;
 
@@ -12,6 +15,8 @@ public class EntryFetcher {
 	}
 
 	public Mono<Entry> fetch(String owner, String repo, String path) {
+		EntryId entryId = EntryId.fromFilePath(Paths.get(path));
+
 		// TODO: 実装してください
 		return Mono.empty();
 	}
