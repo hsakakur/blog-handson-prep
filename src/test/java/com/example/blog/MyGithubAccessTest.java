@@ -14,8 +14,8 @@ import reactor.test.StepVerifier;
 public class MyGithubAccessTest {
 	@Test
 	public void check() {
-		String github = "自分のGitHubアカウント";
-		String accessToken = "Githubのアクセストークン";
+		String github = "hsakakur";
+		String accessToken = "e7a97a3c854c842b65f20d447c6f853b1944c88a";
 
 		EntryFetcher entryFetcher = new EntryFetcher(
 				new GitHubClient(WebClient.builder(), new AccessToken(accessToken)));
